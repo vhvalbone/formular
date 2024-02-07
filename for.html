@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enkelt formulär</title>
+</head>
+<body>
+    <h2>Enkelt formulär</h2>
+    <form action="tack.html" method="post">
+        <label for="name">Namn:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="age">Ålder:</label>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="color">Favoritfärg:</label>
+        <input type="color" id="color" name="color"><br>
+
+        <label for="food">Favoritmat:</label>
+        <select id="food" name="food">
+            <option value="pizza">Pizza</option>
+            <option value="sushi">Sushi</option>
+            <option value="pasta">Pasta</option>
+            <option value="tacos">Tacos</option>
+            <option value="hamburgare">Hamburgare</option>
+        </select><br>
+
+        <label>Intressen:</label><br>
+        <input type="checkbox" id="interest1" name="interest[]" value="sport">
+        <label for="interest1">Sport</label><br>
+        <input type="checkbox" id="interest2" name="interest[]" value="music">
+        <label for="interest2">Musik</label><br>
+        <input type="checkbox" id="interest3" name="interest[]" value="reading">
+        <label for="interest3">Läsning</label><br>
+
+        <label>Kön:</label><br>
+        <input type="radio" id="gender1" name="gender" value="male">
+        <label for="gender1">Man</label><br>
+        <input type="radio" id="gender2" name="gender" value="female">
+        <label for="gender2">Kvinna</label><br>
+        <input type="radio" id="gender3" name="gender" value="other">
+        <label for="gender3">Annat</label><br>
+
+        <input type="submit" value="Skicka">
+    </form><a href="tack.html"></a>
+</body>
+</html>
